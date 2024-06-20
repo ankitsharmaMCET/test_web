@@ -1,0 +1,499 @@
+@media (max-width: 768px) {
+#prof{
+    display: flex;
+    flex-direction: column;
+}}
+
+@media (max-width: 768px) {
+#about{
+    display: flex;
+    flex-direction: column;
+}}
+
+@media (min-width: 1031px) {
+#contact{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}}
+
+#contact{
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 48px; /* Larger font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Setting a font family */
+    letter-spacing: 5px; /* Increased letter spacing */
+    text-transform: uppercase; /* Uppercase text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft text shadow */
+    animation: glow 2s ease infinite alternate; /* Adding a glow animation */
+}
+
+.navbar {
+    background: linear-gradient(45deg, #004d80, #00cccc); /* Use the same gradient as the banner */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center align navbar items */
+    padding: 20px 0; /* Add padding */
+}
+
+.nav-link {
+    margin: 0 15px; /* Add margin between navbar items */
+    text-decoration: none; /* Remove default underline */
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Set font weight */
+}
+
+.nav-link:hover {
+    color: #160f0f; /* Change text color on hover */
+}
+
+.navbar .active {
+    color: #f9f9f9; /* Set active link color */
+    font-weight: bold; /* Optionally, you can make the active link bold */
+    /* Add any other styles you want for active links */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0f0b0b; /* Change text color on hover or when active */
+    /* Add any other styles you want for hovered or active links */
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    to {
+        text-shadow: 0px 0px 10px rgba(0, 204, 204, 0.8), 0px 0px 20px rgba(0, 204, 204, 0.5), 0px 0px 30px rgba(0, 204, 204, 0.3);
+    }
+}
+
+
+
+.outerdiv {
+    padding: 8%; /* Add padding around the content */
+    padding-top: 3%;
+}
+
+
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+}
+
+/* Vision and Mission styles */
+.vision, .mission {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Photo styles */
+.photo {
+    flex: 1;
+    padding: 20px;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Rounded corners for the photo */
+}
+
+
+.carousel-item img {
+    height: 500px; /* Set the desired height for the carousel images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire carousel item */
+}
+@media (max-width: 768px) {
+.carousel-item img {
+    height: auto; /* Set the desired height for the carousel images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire carousel item */
+}}
+
+.row{
+    margin-bottom: 2%;
+}
+
+.event-box {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for larger screens */
+    height: 90%; /* Fixed height */
+    overflow: hidden; /* Hide overflow content */
+    border: 1px solid #ddd; /* Add border for the box */
+    border-radius: 5px; /* Rounded corners */
+    margin: 20px auto; /* Center the box and add top-bottom margin */
+    background-color: #f9f9f9; /* Background color for better visibility */
+    padding: 10px;
+}
+@media (max-width: 768px) {
+.event-box {
+    width: 100%; /* Full width */
+    /* max-width: 400px; Max width for larger screens */
+    height: 90%; /* Fixed height */
+    overflow: hidden; /* Hide overflow content */
+    border: 1px solid #ddd; /* Add border for the box */
+    border-radius: 5px; /* Rounded corners */
+    margin:  auto; /* Center the box and add top-bottom margin */
+    background-color: #f9f9f9; /* Background color for better visibility */
+    padding: auto;
+}}
+
+.event-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    animation: slide-up 20s linear infinite;
+}
+
+.event-list li {
+    white-space: nowrap; /* Prevent wrapping */
+    padding: 5px 10px; /* Add padding to list items */
+}
+
+.event-list li a {
+    text-decoration: none;
+    color: #333; /* Set link color */
+    transition: color 0.3s ease; /* Add transition for smoother color change */
+}
+
+.event-list li a:hover {
+    color: #0066cc; /* Change link color on hover */
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.event-box-head h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: red;
+    animation: blink 1s infinite alternate; /* Blinking animation */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+#mid{
+    display: flex;
+    flex-direction: column;
+}}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .event-box {
+        /* height: 150px; Adjust height for smaller screens */
+        padding: 5px;
+    }
+
+    .event-list li {
+        padding: 3px 5px; /* Reduce padding for list items */
+    }
+
+    .event-box h3 {
+        font-size: 16px; /* Smaller font size for heading */
+    }
+}
+
+@media (max-width: 480px) {
+    .event-box {
+        /* height: 120px; Further adjust height for smaller screens */
+    }
+
+    .event-list li {
+        padding: 2px 3px; /* Further reduce padding for list items */
+    }
+
+    .event-box h3 {
+        font-size: 14px; /* Smaller font size for heading */
+    }
+}
+@media (max-width: 768px) {
+.col-4{
+    max-width: none;
+}}
+
+/* Professor card styles */
+.professor-card {
+    width: 100%;
+    max-width: 80%; /* Adjust max-width as needed */
+    margin-bottom: 7%; /* Adjust margin as needed */
+    /*overflow: hidden;  Hide overflow content */
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 8px; /* Border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+    margin-top: 7%;
+    height: 30%; /* Set the height to your desired value */
+}
+
+.professor-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+.professor-image {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; /* Make it a circle */
+}
+
+.professor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.professor-info {
+    flex: 1;
+    padding: 20px;
+    /* border: 1px solid #ccc;  Border for the right side */
+    border-radius: 0 10px 10px 0; /* Rounded right corners */
+}
+
+.professor-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.professor-info p {
+    margin: 0;
+}
+
+
+
+/* Research Theme styles */
+.research-theme {
+    margin-top: 8%; /* Adjust margin as needed */
+    margin-bottom: 4%;
+}
+
+.theme-title h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.theme-description {
+    display: grid;
+    gap: 20px; /* Adjust gap between items */
+}
+
+.research-theme-item {
+    background-color: #76cf82;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 6%;
+}
+
+.research-theme-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.research-theme-item p {
+    margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Member card styles */
+.member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust gap between cards */
+}
+
+.member-card {
+    width: calc(50% - 20px); /* 2 cards per row with a gap of 20px */
+    max-width: 300px; /* Adjust max-width as needed */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adjust margin bottom as needed */
+}
+
+.member-card {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the entire link area clickable */
+}
+.member-image {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%; /* Make it a circle */
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.member-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 443px) {
+.member-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: medium;
+}}
+
+.member-info p {
+    margin: 0;
+}
+
+
+
+.contact-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card i {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.contact-card h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-card p {
+    color: #555;
+}
+
+
+
+/* Footer styles */
+.footer {
+    background-color: #004d80; /* Match the deep blue from the banner */
+    color: #fff;
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer .copyright {
+    text-align: center; /* Center the copyright message */
+    margin-top: 20px; /* Add some space between the contact info and copyright */
+    font-size: 14px; /* Adjust font size */
+    color: #888; /* Adjust color */
+}
+.footer-column {
+    flex: 1;
+    margin-right: 20px; /* Adjust margin for smaller screens */
+    margin-bottom: 20px; /* Add margin between columns */
+}
+
+
+.footer-column:last-child {
+    margin-right: 0;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    color: #fff; /* Match the text color to the banner */
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    color: #ddd; /* Lighten the text color for better readability */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    padding: 0;
+    text-align: center; /* Center align social icons */
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
